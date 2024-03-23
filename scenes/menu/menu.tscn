@@ -35,7 +35,7 @@ text = "Paramètres
 layout_mode = 2
 text = "Quitter"
 
-[connection signal="pressed" from="marginContainer/vBoxContainer/play" to="." method="onPlayPressed"]
-[connection signal="pressed" from="marginContainer/vBoxContainer/collection" to="." method="onCollectionPressed"]
-[connection signal="pressed" from="marginContainer/vBoxContainer/settings" to="." method="onSettingsPressed"]
-[connection signal="pressed" from="marginContainer/vBoxContainer/exit" to="." method="onExitPressed"]
+[connection signal="pressed" from="marginContainer/vBoxContainer/play" to="." method="OnPlayPressed"]
+[connection signal="pressed" from="marginContainer/vBoxContainer/collection" to="." method="OnCollectionPressed"]
+[connection signal="pressed" from="marginContainer/vBoxContainer/settings" to="." method="OnSettingsPressed"]
+[connection signal="pressed" from="marginContainer/vBoxContainer/exit" to="." method="OnExitPressed"]
