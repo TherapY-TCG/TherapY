@@ -1,20 +1,20 @@
 using Godot;
 using System;
 
-public partial class menu : Control {
-    public void onPlayPressed() {
+public partial class Menu : Control {
+    public void OnPlayPressed() {
         // TODO
     }
 
-    public void onCollectionPressed() {
+    public void OnCollectionPressed() {
         // TODO
     }
 
-    public void onSettingsPressed() {
+    public void OnSettingsPressed() {
         // TODO
     }
 
-    public void onExitPressed() {
+    public void OnExitPressed() {
         GetTree().Quit();
     }
 }
