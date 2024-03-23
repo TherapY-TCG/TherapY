@@ -1,0 +1,78 @@
+[gd_scene load_steps=2 format=3 uid="uid://8nmk1kkmkhh0"]
+
+[ext_resource type="Script" path="res://scripts/menu/Menu.cs" id="1_2m5ts"]
+
+[node name="menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+script = ExtResource("1_2m5ts")
+
+[node name="background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="marginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="vBoxContainer" type="VBoxContainer" parent="marginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_constants/separation = 60
+
+[node name="separator" type="Control" parent="marginContainer/vBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="marginContainer/vBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 120
+text = "TherapY"
+
+[node name="hBoxContainer" type="HBoxContainer" parent="marginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="vBoxContainer" type="VBoxContainer" parent="marginContainer/hBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="play" type="Button" parent="marginContainer/hBoxContainer/vBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Jouer"
+
+[node name="collection" type="Button" parent="marginContainer/hBoxContainer/vBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Collection"
+
+[node name="settings" type="Button" parent="marginContainer/hBoxContainer/vBoxContainer"]
+custom_minimum_size = Vector2(220, 32)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Paramètres"
+
+[node name="exit" type="Button" parent="marginContainer/hBoxContainer/vBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Quitter"
+
+[connection signal="pressed" from="marginContainer/hBoxContainer/vBoxContainer/play" to="." method="OnPlayPressed"]
+[connection signal="pressed" from="marginContainer/hBoxContainer/vBoxContainer/collection" to="." method="OnCollectionPressed"]
+[connection signal="pressed" from="marginContainer/hBoxContainer/vBoxContainer/settings" to="." method="OnSettingsPressed"]
+[connection signal="pressed" from="marginContainer/hBoxContainer/vBoxContainer/exit" to="." method="OnExitPressed"]
