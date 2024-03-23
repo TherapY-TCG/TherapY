@@ -4,35 +4,59 @@
 
 [node name="menu" type="Control"]
 layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
 script = ExtResource("1_2m5ts")
 
+[node name="background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
 [node name="marginContainer" type="MarginContainer" parent="."]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -95.0
+offset_top = -121.0
+offset_right = 95.0
+offset_bottom = 121.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="vBoxContainer" type="VBoxContainer" parent="marginContainer"]
 layout_mode = 2
+theme_override_constants/separation = 10
 
 [node name="play" type="Button" parent="marginContainer/vBoxContainer"]
 layout_mode = 2
-text = "Jouer
-"
+theme_override_font_sizes/font_size = 32
+text = "Jouer"
 
 [node name="collection" type="Button" parent="marginContainer/vBoxContainer"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 32
 text = "Collection"
 
 [node name="settings" type="Button" parent="marginContainer/vBoxContainer"]
+custom_minimum_size = Vector2(220, 32)
 layout_mode = 2
-text = "Paramètres
-"
+theme_override_font_sizes/font_size = 32
+text = "Paramètres"
 
 [node name="exit" type="Button" parent="marginContainer/vBoxContainer"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 32
 text = "Quitter"
 
 [connection signal="pressed" from="marginContainer/vBoxContainer/play" to="." method="OnPlayPressed"]
