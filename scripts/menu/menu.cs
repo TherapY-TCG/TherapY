@@ -11,7 +11,7 @@ public partial class Menu : Control {
     }
 
     public void OnSettingsPressed() {
-        // TODO
+        GetTree().ChangeSceneToFile("res://scenes/menu/settings_menu.tscn");
     }
 
     public void OnExitPressed() {
