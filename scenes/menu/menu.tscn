@@ -1,0 +1,41 @@
+[gd_scene load_steps=2 format=3 uid="uid://dyllhp2mokt6m"]
+
+[ext_resource type="Script" path="res://scripts/menu/menu.cs" id="1_bvl7k"]
+
+[node name="menu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_bvl7k")
+
+[node name="marginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="vBoxContainer" type="VBoxContainer" parent="marginContainer"]
+layout_mode = 2
+
+[node name="play" type="Button" parent="marginContainer/vBoxContainer"]
+layout_mode = 2
+text = "Jouer
+"
+
+[node name="collection" type="Button" parent="marginContainer/vBoxContainer"]
+layout_mode = 2
+text = "Collection"
+
+[node name="settings" type="Button" parent="marginContainer/vBoxContainer"]
+layout_mode = 2
+text = "Paramètres
+"
+
+[node name="exit" type="Button" parent="marginContainer/vBoxContainer"]
+layout_mode = 2
+text = "Quitter"
+
+[connection signal="pressed" from="marginContainer/vBoxContainer/play" to="." method="onPlayPressed"]
+[connection signal="pressed" from="marginContainer/vBoxContainer/collection" to="." method="onCollectionPressed"]
+[connection signal="pressed" from="marginContainer/vBoxContainer/settings" to="." method="onSettingsPressed"]
+[connection signal="pressed" from="marginContainer/vBoxContainer/exit" to="." method="onExitPressed"]
