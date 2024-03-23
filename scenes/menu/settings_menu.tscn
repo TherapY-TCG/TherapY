@@ -53,7 +53,7 @@ text = ":o"
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 text = "Github :D"
-uri = "https://github.com/Vexcited/TherapY"
+uri = "https://github.com/TherapY-TCG/TherapY"
 
 [node name="back" type="Button" parent="marginContainer/hBoxContainer/vBoxContainer"]
 layout_mode = 2
