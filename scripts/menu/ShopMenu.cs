@@ -13,21 +13,18 @@ public partial class ShopMenu : Control {
     }
 
     public void OnBoostersPressed() {
-        GD.Print("Boosters pressed");
         _boostersPage.Visible = true;
         _skinsPage.Visible = false;
         _offersPage.Visible = false;
     }
 
     public void OnSkinsPressed() {
-        GD.Print("Skins pressed");
         _boostersPage.Visible = false;
         _skinsPage.Visible = true;
         _offersPage.Visible = false;
     }
 
     public void OnOffersPressed() {
-        GD.Print("Offers pressed");
         _boostersPage.Visible = false;
         _skinsPage.Visible = false;
         _offersPage.Visible = true;
