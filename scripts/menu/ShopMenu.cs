@@ -10,8 +10,6 @@ public partial class ShopMenu : Control {
         _boostersPage = GetNode<MarginContainer>("shop/mainPage/boostersPage");
         _skinsPage = GetNode<MarginContainer>("shop/mainPage/skinsPage");
         _offersPage = GetNode<MarginContainer>("shop/mainPage/offersPage");
-
-        OnBoostersPressed();
     }
 
     public void OnBoostersPressed() {

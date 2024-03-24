@@ -127,6 +127,7 @@ layout_mode = 2
 texture_normal = ExtResource("2_g4ofb")
 
 [node name="skinsPage" type="MarginContainer" parent="shop/mainPage"]
+visible = false
 layout_mode = 2
 theme_override_constants/margin_left = 50
 theme_override_constants/margin_top = 100
@@ -189,6 +190,7 @@ layout_mode = 2
 texture_normal = ExtResource("2_g4ofb")
 
 [node name="offersPage" type="MarginContainer" parent="shop/mainPage"]
+visible = false
 layout_mode = 2
 theme_override_constants/margin_left = 50
 theme_override_constants/margin_top = 100
