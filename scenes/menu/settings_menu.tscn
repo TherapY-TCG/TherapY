@@ -25,7 +25,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 0
 theme_override_constants/separation = 120
 
-[node name="hSeparator" type="HSeparator" parent="marginContainer/vBoxContainer"]
+[node name="separator" type="Control" parent="marginContainer/vBoxContainer"]
 layout_mode = 2
 
 [node name="label" type="Label" parent="marginContainer/vBoxContainer"]
