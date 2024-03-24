@@ -61,6 +61,11 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 32
 text = "Collection"
 
+[node name="shop" type="Button" parent="marginContainer/hBoxContainer/vBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Boutique"
+
 [node name="settings" type="Button" parent="marginContainer/hBoxContainer/vBoxContainer"]
 custom_minimum_size = Vector2(220, 32)
 layout_mode = 2
@@ -74,5 +79,6 @@ text = "Quitter"
 
 [connection signal="pressed" from="marginContainer/hBoxContainer/vBoxContainer/play" to="." method="OnPlayPressed"]
 [connection signal="pressed" from="marginContainer/hBoxContainer/vBoxContainer/collection" to="." method="OnCollectionPressed"]
+[connection signal="pressed" from="marginContainer/hBoxContainer/vBoxContainer/shop" to="." method="OnShopPressed"]
 [connection signal="pressed" from="marginContainer/hBoxContainer/vBoxContainer/settings" to="." method="OnSettingsPressed"]
 [connection signal="pressed" from="marginContainer/hBoxContainer/vBoxContainer/exit" to="." method="OnExitPressed"]

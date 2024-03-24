@@ -14,6 +14,10 @@ public partial class Menu : Control {
         GetTree().ChangeSceneToFile("res://scenes/menu/settings_menu.tscn");
     }
 
+    public void OnShopPressed() {
+        GetTree().ChangeSceneToFile("res://scenes/menu/shop_menu.tscn");
+    }
+
     public void OnExitPressed() {
         GetTree().Quit();
     }

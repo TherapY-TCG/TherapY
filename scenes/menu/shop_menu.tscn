@@ -1,0 +1,256 @@
+[gd_scene load_steps=3 format=3 uid="uid://ej3wacqmwgpq"]
+
+[ext_resource type="Script" path="res://scripts/menu/ShopMenu.cs" id="1_1sps5"]
+[ext_resource type="Texture2D" uid="uid://8i4amhvqa06u" path="res://assets/icon.svg" id="2_g4ofb"]
+
+[node name="shopMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1sps5")
+
+[node name="background" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="shop" type="VBoxContainer" parent="."]
+layout_mode = 2
+offset_right = 1900.0
+offset_bottom = 1080.0
+theme_override_constants/separation = 20
+
+[node name="upBar" type="PanelContainer" parent="shop"]
+layout_mode = 2
+
+[node name="vBoxContainer" type="HBoxContainer" parent="shop/upBar"]
+layout_mode = 2
+theme_override_constants/separation = 60
+alignment = 1
+
+[node name="boosters" type="Button" parent="shop/upBar/vBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+text = "Booster"
+
+[node name="VSeparator2" type="VSeparator" parent="shop/upBar/vBoxContainer"]
+layout_mode = 2
+
+[node name="skins" type="Button" parent="shop/upBar/vBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+text = "Cosmétique"
+
+[node name="VSeparator3" type="VSeparator" parent="shop/upBar/vBoxContainer"]
+layout_mode = 2
+
+[node name="offers" type="Button" parent="shop/upBar/vBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+text = "Offres"
+
+[node name="VSeparator4" type="VSeparator" parent="shop/upBar/vBoxContainer"]
+layout_mode = 2
+
+[node name="back" type="Button" parent="shop/upBar/vBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+text = "Retour"
+
+[node name="mainPage" type="HBoxContainer" parent="shop"]
+layout_mode = 2
+alignment = 1
+
+[node name="boostersPage" type="MarginContainer" parent="shop/mainPage"]
+layout_mode = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 100
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+metadata/_edit_use_anchors_ = true
+
+[node name="GridContainer" type="GridContainer" parent="shop/mainPage/boostersPage"]
+layout_mode = 2
+theme_override_constants/h_separation = 250
+theme_override_constants/v_separation = 100
+columns = 4
+
+[node name="TextureButton" type="TextureButton" parent="shop/mainPage/boostersPage/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_g4ofb")
+
+[node name="TextureButton2" type="TextureButton" parent="shop/mainPage/boostersPage/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_g4ofb")
+
+[node name="TextureButton3" type="TextureButton" parent="shop/mainPage/boostersPage/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_g4ofb")
+
+[node name="TextureButton4" type="TextureButton" parent="shop/mainPage/boostersPage/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_g4ofb")
+
+[node name="TextureButton5" type="TextureButton" parent="shop/mainPage/boostersPage/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_g4ofb")
+
+[node name="TextureButton6" type="TextureButton" parent="shop/mainPage/boostersPage/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_g4ofb")
+
+[node name="TextureButton7" type="TextureButton" parent="shop/mainPage/boostersPage/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_g4ofb")
+
+[node name="TextureButton8" type="TextureButton" parent="shop/mainPage/boostersPage/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_g4ofb")
+
+[node name="TextureButton9" type="TextureButton" parent="shop/mainPage/boostersPage/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_g4ofb")
+
+[node name="TextureButton10" type="TextureButton" parent="shop/mainPage/boostersPage/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_g4ofb")
+
+[node name="TextureButton11" type="TextureButton" parent="shop/mainPage/boostersPage/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_g4ofb")
+
+[node name="TextureButton12" type="TextureButton" parent="shop/mainPage/boostersPage/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_g4ofb")
+
+[node name="skinsPage" type="MarginContainer" parent="shop/mainPage"]
+layout_mode = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 100
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+metadata/_edit_use_anchors_ = true
+
+[node name="GridContainer" type="GridContainer" parent="shop/mainPage/skinsPage"]
+layout_mode = 2
+theme_override_constants/h_separation = 250
+theme_override_constants/v_separation = 100
+columns = 3
+
+[node name="TextureButton" type="TextureButton" parent="shop/mainPage/skinsPage/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_g4ofb")
+
+[node name="TextureButton2" type="TextureButton" parent="shop/mainPage/skinsPage/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_g4ofb")
+
+[node name="TextureButton3" type="TextureButton" parent="shop/mainPage/skinsPage/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_g4ofb")
+
+[node name="TextureButton4" type="TextureButton" parent="shop/mainPage/skinsPage/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_g4ofb")
+
+[node name="TextureButton5" type="TextureButton" parent="shop/mainPage/skinsPage/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_g4ofb")
+
+[node name="TextureButton6" type="TextureButton" parent="shop/mainPage/skinsPage/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_g4ofb")
+
+[node name="TextureButton7" type="TextureButton" parent="shop/mainPage/skinsPage/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_g4ofb")
+
+[node name="TextureButton8" type="TextureButton" parent="shop/mainPage/skinsPage/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_g4ofb")
+
+[node name="TextureButton9" type="TextureButton" parent="shop/mainPage/skinsPage/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_g4ofb")
+
+[node name="TextureButton10" type="TextureButton" parent="shop/mainPage/skinsPage/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_g4ofb")
+
+[node name="TextureButton11" type="TextureButton" parent="shop/mainPage/skinsPage/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_g4ofb")
+
+[node name="TextureButton12" type="TextureButton" parent="shop/mainPage/skinsPage/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_g4ofb")
+
+[node name="offersPage" type="MarginContainer" parent="shop/mainPage"]
+layout_mode = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 100
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+metadata/_edit_use_anchors_ = true
+
+[node name="GridContainer" type="GridContainer" parent="shop/mainPage/offersPage"]
+layout_mode = 2
+theme_override_constants/h_separation = 250
+theme_override_constants/v_separation = 100
+columns = 2
+
+[node name="TextureButton" type="TextureButton" parent="shop/mainPage/offersPage/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_g4ofb")
+
+[node name="TextureButton2" type="TextureButton" parent="shop/mainPage/offersPage/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_g4ofb")
+
+[node name="TextureButton3" type="TextureButton" parent="shop/mainPage/offersPage/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_g4ofb")
+
+[node name="TextureButton4" type="TextureButton" parent="shop/mainPage/offersPage/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_g4ofb")
+
+[node name="TextureButton5" type="TextureButton" parent="shop/mainPage/offersPage/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_g4ofb")
+
+[node name="TextureButton6" type="TextureButton" parent="shop/mainPage/offersPage/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_g4ofb")
+
+[node name="TextureButton7" type="TextureButton" parent="shop/mainPage/offersPage/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_g4ofb")
+
+[node name="TextureButton8" type="TextureButton" parent="shop/mainPage/offersPage/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_g4ofb")
+
+[node name="TextureButton9" type="TextureButton" parent="shop/mainPage/offersPage/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_g4ofb")
+
+[node name="TextureButton10" type="TextureButton" parent="shop/mainPage/offersPage/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_g4ofb")
+
+[node name="TextureButton11" type="TextureButton" parent="shop/mainPage/offersPage/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_g4ofb")
+
+[node name="TextureButton12" type="TextureButton" parent="shop/mainPage/offersPage/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_g4ofb")
+
+[connection signal="pressed" from="shop/upBar/vBoxContainer/boosters" to="." method="OnBoostersPressed"]
+[connection signal="pressed" from="shop/upBar/vBoxContainer/skins" to="." method="OnSkinsPressed"]
+[connection signal="pressed" from="shop/upBar/vBoxContainer/offers" to="." method="OnOffersPressed"]
+[connection signal="pressed" from="shop/upBar/vBoxContainer/back" to="." method="OnBackPressed"]
